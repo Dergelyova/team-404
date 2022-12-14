@@ -36,13 +36,9 @@ To set up a project deployment, you need to perform a few additional steps to
 set up your repository. Go to the `Settings` tab and in the `Actions` subsection
 select the `General` item.
 
-![GitHub actions settings](./assets/actions-config-step-1.png)
-
 Scroll the page to the last section, in which make sure the options are selected
 as in the following image and click `Save`. Without these settings, the build
 will not have enough rights to automate the deployment process.
-
-![GitHub actions settings](./assets/actions-config-step-2.png)
 
 The production version of the project will be automatically built and deployed
 to GitHub Pages, in the `gh-pages` branch, every time the `main` branch is
@@ -62,8 +58,6 @@ Next, you need to go to the settings of the GitHub repository (`Settings` >
 `Pages`) and set the distribution of the production version of files from the
 `/root` folder of the `gh-pages` branch, if this was not done automatically.
 
-![GitHub Pages settings](./assets/repo-settings.png)
-
 ### Deployment status
 
 The deployment status of the latest commit is displayed with an icon next to its
@@ -75,8 +69,6 @@ ID.
 
 More detailed information about the status can be viewed by clicking on the
 icon, and in the drop-down window, follow the link `Details`.
-
-![Deployment status](./assets/status.png)
 
 ### Live page
 
@@ -91,8 +83,6 @@ Most likely you have the wrong value for the `homepage` property or the `build`
 script in the `package.json` file.
 
 ## How it works
-
-![How it works](./assets/how-it-works.png)
 
 1. After each push to the `main` branch of the GitHub repository, a special
    script (GitHub Action) is launched from the `.github/workflows/deploy.yml`

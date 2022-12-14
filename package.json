@@ -2,14 +2,14 @@
   "name": "team-404",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://Dergelyova.github.io/team-404",
+  "homepage": "https://dergelyova.github.io/team-404",
   "scripts": {
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /team-404/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Dergelyova/team-404"
+    "url": "git+https://github.com/dergelyova/team-404/"
   },
   "keywords": [],
   "license": "ISC",

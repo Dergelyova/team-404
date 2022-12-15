@@ -556,4 +556,45 @@ body {
   color: #89d7d7;
 }
 
+.hero {
+  margin-top: 73px;
+}
+
+.hero__box-wrapper {
+  position: relative;
+}
+
+.hero__title {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+}
+
+.hero__thumb-triatlon {
+  height: 50vh;
+  width: 100vw;
+  transition: all .4s cubic-bezier(.4, 0, .2, 1);
+}
+
+.hero__thumb-triatlon:hover {
+  transform: scale(1.05);
+}
+
+.hero__thumb-run {
+  height: 50vh;
+  width: 100vw;
+  transition: all .4s cubic-bezier(.4, 0, .2, 1);
+}
+
+.hero__thumb-run:hover {
+  transform: scale(1.05);
+}
+
+.hero__thumb-triatlon > img, .hero__thumb-run > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 /*# sourceMappingURL=index.b07a87f3.css.map */

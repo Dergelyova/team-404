@@ -579,10 +579,17 @@ body {
 
 .hero__link-wrapper {
   transition: all .4s cubic-bezier(.4, 0, .2, 1);
+  transform: scale(1);
 }
 
 .hero__link-wrapper:hover {
-  transform: scale(1.05);
+  transform: scale(1.2);
+}
+
+@media (min-width: 760px) {
+  .hero__link-wrapper:hover {
+    transform: scale(1.05);
+  }
 }
 
 .hero__link {
@@ -692,7 +699,7 @@ body {
 .hero__arrow-up {
   width: 20px;
   height: 60px;
-  background: url("arrow-up.eb59fe99.png") center no-repeat;
+  background: url("arrow-up.c659d6d2.png") center no-repeat;
   position: absolute;
   top: 40%;
   left: 50%;
@@ -703,7 +710,7 @@ body {
   .hero__arrow-up {
     width: 60px;
     height: 60px;
-    background: url("arrow-right.8da2cde4.png") center no-repeat;
+    background: url("arrow-right.5f8510b0.png") center no-repeat;
     top: 39%;
     left: 55%;
   }
@@ -712,7 +719,7 @@ body {
 .hero__arrow-down {
   width: 20px;
   height: 60px;
-  background: url("arrow-down.d0d79f49.png") center no-repeat;
+  background: url("arrow-down.741068b7.png") center no-repeat;
   position: absolute;
   top: 51%;
   left: 50%;
@@ -723,7 +730,7 @@ body {
   .hero__arrow-down {
     width: 60px;
     height: 60px;
-    background: url("arrow-left.0deeb1b1.png") center no-repeat;
+    background: url("arrow-left.66d921bc.png") center no-repeat;
     top: 51%;
     left: 44%;
   }

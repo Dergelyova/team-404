@@ -1,43 +1,146 @@
 .hero {
-  margin-top: 73px;
+  position: relative;
+  margin-top: 72px;
 
-  &__box-wrapper {
-    position: relative;
+  @media (min-width: 760px) {
+    display: flex;
+    flex-direction: row;
   }
 
-  &__title {
-    position: fixed;
+  &__link-wrapper {
+    transition: 400ms;
+    transition-timing-function: $cubic-bezier;
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  &__link {
+    position: relative;
+
+    &:visited {
+      color: $light-text-color;
+    }
+  }
+
+  &__title-tri,
+  &__title-run {
+    position: absolute;
     top: 50%;
     left: 50%;
+    transform: translateX(-50%);
+
+    font-style: italic;
+    font-weight: 800;
+    font-size: 27px;
+    line-height: 120%;
+
+    z-index: 50;
+  }
+
+  &__title-tri {
+    @media (min-width: 760px) {
+      top: 60%;
+      left: 60%;
+
+      font-weight: 800;
+      font-size: 42px;
+      line-height: 120%;
+    }
+    @media (min-width: 1180px) {
+      font-size: 64px;
+    }
+  }
+
+  &__title-run {
+    @media (min-width: 760px) {
+      top: 33%;
+      right: -10%;
+
+      font-weight: 800;
+      font-size: 42px;
+      line-height: 120%;
+    }
+    @media (min-width: 1180px) {
+      top: 30%;
+      font-size: 64px;
+    }
+  }
+
+  &__thumb-triatlon,
+  &__thumb-run {
+    height: calc(50vh - 36px);
+    width: 100vw;
+    @media (min-width: 760px) {
+      height: calc(100vh - 36px);
+      width: 50vw;
+    }
   }
 
   &__thumb-triatlon {
-    height: 50vh;
-    width: 100vw;
-
-    transition: 400ms;
-    transition-timing-function: $cubic-bezier;
-    &:hover {
-      transform: scale(1.05);
-    }
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url('../images/hero/tri.jpg') no-repeat center;
+    background-size: cover;
   }
 
   &__thumb-run {
-    height: 50vh;
-    width: 100vw;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url('../images/hero/run.jpg') no-repeat center;
 
-    transition: 400ms;
-    transition-timing-function: $cubic-bezier;
-    &:hover {
-      transform: scale(1.05);
+    background-size: cover;
+  }
+
+  &__help-text {
+    position: absolute;
+    top: 49%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 130%;
+
+    @media (min-width: 760px) {
+      top: 47%;
+      font-size: 16px;
     }
   }
-  &__thumb-triatlon > img,
-  &__thumb-run > img {
-    display: block;
-    height: 100%;
-    width: 100%;
 
-    object-fit: cover;
+  &__arrow-up {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 20px;
+    height: 60px;
+    background: url('../images/common/arrow-up.png') no-repeat center;
+
+    @media (min-width: 760px) {
+      top: 39%;
+      left: 55%;
+      width: 60px;
+      height: 60px;
+      background: url('../images/common/arrow-right.png') no-repeat center;
+    }
+  }
+
+  &__arrow-down {
+    position: absolute;
+    top: 51%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 20px;
+    height: 60px;
+    background: url('../images/common/arrow-down.png') no-repeat center;
+
+    @media (min-width: 760px) {
+      top: 51%;
+      left: 44%;
+      width: 60px;
+      height: 60px;
+      background: url('../images/common/arrow-left.png') no-repeat center;
+    }
   }
 }

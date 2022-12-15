@@ -1,0 +1,43 @@
+.hero {
+  margin-top: 73px;
+
+  &__box-wrapper {
+    position: relative;
+  }
+
+  &__title {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+  }
+
+  &__thumb-triatlon {
+    height: 50vh;
+    width: 100vw;
+
+    transition: 400ms;
+    transition-timing-function: $cubic-bezier;
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  &__thumb-run {
+    height: 50vh;
+    width: 100vw;
+
+    transition: 400ms;
+    transition-timing-function: $cubic-bezier;
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+  &__thumb-triatlon > img,
+  &__thumb-run > img {
+    display: block;
+    height: 100%;
+    width: 100%;
+
+    object-fit: cover;
+  }
+}

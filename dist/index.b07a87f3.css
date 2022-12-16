@@ -650,12 +650,16 @@ body {
     height: calc(50vh - 36px);
   }
 
-  50% {
-    height: calc(60vh - 36px);
+  35% {
+    height: calc(55vh - 36px);
+  }
+
+  75% {
+    height: calc(45vh - 36px);
   }
 
   100% {
-    height: calc(40vh - 36px);
+    height: calc(50vh - 36px);
   }
 }
 
@@ -664,23 +668,27 @@ body {
     height: calc(50vh - 36px);
   }
 
-  50% {
-    height: calc(40vh - 36px);
+  35% {
+    height: calc(45vh - 36px);
+  }
+
+  75% {
+    height: calc(55vh - 36px);
   }
 
   100% {
-    height: calc(60vh - 36px);
+    height: calc(50vh - 36px);
   }
 }
 
 .hero__thumb-triatlon, .hero__thumb-run {
   height: calc(50vh - 36px);
   width: 100vw;
-  animation-duration: 3s;
+  animation-duration: 2s;
   animation-timing-function: linear;
-  animation-iteration-count: 2;
+  animation-iteration-count: 1;
   animation-direction: alternate;
-  animation-delay: 1s;
+  animation-delay: .5s;
 }
 
 @media (min-width: 760px) {

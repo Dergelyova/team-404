@@ -95,12 +95,15 @@
       height: calc(50vh - 36px);
     }
 
-    50% {
-      height: calc(60vh - 36px);
+    35% {
+      height: calc(55vh - 36px);
+    }
+    75% {
+      height: calc(45vh - 36px);
     }
 
     100% {
-      height: calc(40vh - 36px);
+      height: calc(50vh - 36px);
     }
   }
 
@@ -109,12 +112,15 @@
       height: calc(50vh - 36px);
     }
 
-    50% {
-      height: calc(40vh - 36px);
+    35% {
+      height: calc(45vh - 36px);
+    }
+    75% {
+      height: calc(55vh - 36px);
     }
 
     100% {
-      height: calc(60vh - 36px);
+      height: calc(50vh - 36px);
     }
   }
 
@@ -123,10 +129,10 @@
     height: calc(50vh - 36px);
     width: 100vw;
 
-    animation-duration: 3000ms;
+    animation-duration: 2000ms;
     animation-timing-function: linear;
-    animation-delay: 1000ms;
-    animation-iteration-count: 2;
+    animation-delay: 500ms;
+    animation-iteration-count: 1;
     animation-direction: alternate;
 
     @media (min-width: 760px) {

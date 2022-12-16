@@ -1,3 +1,20 @@
+// @keyframes changeSize {
+//   0% {
+//     height: calc(20vh - 36px);
+//     width: 100vw;
+//   }
+
+//   50% {
+//     height: calc(30vh - 36px);
+//     width: 100vw;
+//   }
+
+//   100% {
+//     height: calc(10vh - 36px);
+//     width: 100vw;
+//   }
+// }
+
 .hero {
   position: relative;
   margin-top: 72px;
@@ -73,10 +90,45 @@
     }
   }
 
+  @keyframes changeSizeTri {
+    0% {
+      height: calc(50vh - 36px);
+    }
+
+    50% {
+      height: calc(60vh - 36px);
+    }
+
+    100% {
+      height: calc(40vh - 36px);
+    }
+  }
+
+  @keyframes changeSizeRun {
+    0% {
+      height: calc(50vh - 36px);
+    }
+
+    50% {
+      height: calc(40vh - 36px);
+    }
+
+    100% {
+      height: calc(60vh - 36px);
+    }
+  }
+
   &__thumb-triatlon,
   &__thumb-run {
     height: calc(50vh - 36px);
     width: 100vw;
+
+    animation-duration: 3000ms;
+    animation-timing-function: linear;
+    animation-delay: 1000ms;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+
     @media (min-width: 760px) {
       height: calc(100vh - 36px);
       width: 50vw;
@@ -87,6 +139,9 @@
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
       url('../images/hero/tri.jpg') no-repeat center;
     background-size: cover;
+    @media (max-width: 760px) {
+      animation-name: changeSizeTri;
+    }
   }
 
   &__thumb-run {
@@ -94,6 +149,9 @@
       url('../images/hero/run.jpg') no-repeat center;
 
     background-size: cover;
+    @media (max-width: 760px) {
+      animation-name: changeSizeRun;
+    }
   }
 
   &__help-text {

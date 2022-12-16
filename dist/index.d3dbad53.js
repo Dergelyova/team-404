@@ -1,5 +1,5 @@
-const tri = document.querySelector(".hero__thumb-triatlon");
-const run = document.querySelector(".hero__thumb-run");
+// const tri = document.querySelector('.hero__thumb-triatlon');
+// const run = document.querySelector('.hero__thumb-run');
 let touchstartX = 0;
 let touchendX = 0;
 let touchstartY = 0;

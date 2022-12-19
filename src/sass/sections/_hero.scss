@@ -25,7 +25,6 @@
   }
 
   &__link-wrapper {
-    position: relative;
     transition: 400ms;
     transition-timing-function: $cubic-bezier;
     transform: scale(1);
@@ -33,6 +32,7 @@
       transform: scale(1.2);
     }
     @media (min-width: 760px) {
+      height: auto;
       &:hover {
         transform: scale(1.05);
       }
@@ -40,6 +40,7 @@
   }
 
   &__link {
+    display: block;
     position: relative;
     color: $light-text-color;
     &:visited {
@@ -59,8 +60,6 @@
     font-size: 27px;
     line-height: 120%;
     text-transform: uppercase;
-
-    z-index: 50;
   }
 
   &__title-tri {
@@ -144,7 +143,7 @@
   }
 
   &__thumb-triatlon {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
       url('../images/hero/tri.jpg') no-repeat center;
     background-size: cover;
     @media (max-width: 760px) {
@@ -153,7 +152,7 @@
   }
 
   &__thumb-run {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
       url('../images/hero/run.jpg') no-repeat center;
 
     background-size: cover;

@@ -2,12 +2,18 @@
 
 body {
   background-color: $primary-bg-color;
-  background-color: wheat;
+  // background-color: wheat;
   color: $light-text-color;
   font-family: $fontFamily;
+  overflow: hidden;
 }
 
 .container {
   max-width: 1160px;
   margin: 0 auto;
+  padding: 0 10px;
+
+  @media (min-width: 768px) {
+    padding: 0 20px;
+  }
 }

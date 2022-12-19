@@ -2,11 +2,11 @@
   //   margin-top: 20px;
   height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
-    url('../images/triathlon/tri-mobile-hero.jpg') center/cover no-repeat;
+    url('../images/triathlon/hero/tri-mobile-hero.jpg') center/cover no-repeat;
 
   @media (min-width: 760px) {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-      url('../images/triathlon/tri-hero.jpg') center/cover no-repeat;
+      url('../images/triathlon/hero/tri-hero.jpg') center/cover no-repeat;
   }
 
   &__wrap {
@@ -84,6 +84,6 @@
     height: 33px;
     width: 11px;
 
-    background: url('../images/triathlon/pin.png') center/cover no-repeat;
+    background: url('../images/triathlon/hero/pin.png') center/cover no-repeat;
   }
 }

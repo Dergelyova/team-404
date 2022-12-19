@@ -798,12 +798,12 @@ body {
 
 .tri {
   height: 100vh;
-  background: linear-gradient(#000000d9, #000000d9), url("tri-mobile-hero.6bc506cf.jpg") center / cover no-repeat;
+  background: linear-gradient(#000000d9, #000000d9), url("tri-mobile-hero.9b7ae1ff.jpg") center / cover no-repeat;
 }
 
 @media (min-width: 760px) {
   .tri {
-    background: linear-gradient(#0009, #0009), url("tri-hero.2d381d08.jpg") center / cover no-repeat;
+    background: linear-gradient(#0009, #0009), url("tri-hero.66936050.jpg") center / cover no-repeat;
   }
 }
 
@@ -881,7 +881,7 @@ body {
 .tri__pin {
   height: 33px;
   width: 11px;
-  background: url("pin.d57adfb2.png") center / cover no-repeat;
+  background: url("pin.2c16c550.png") center / cover no-repeat;
   display: inline-block;
   position: absolute;
   bottom: 0;

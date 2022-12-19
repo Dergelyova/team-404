@@ -125,7 +125,7 @@
     }
   }
 
-  &__thumb-triatlon,
+  &__thumb-triathlon,
   &__thumb-run {
     height: calc(50vh - 36px);
     width: 100vw;
@@ -142,7 +142,7 @@
     }
   }
 
-  &__thumb-triatlon {
+  &__thumb-triathlon {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
       url('../images/hero/tri.jpg') no-repeat center;
     background-size: cover;

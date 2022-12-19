@@ -1,0 +1,89 @@
+.tri {
+  //   margin-top: 20px;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
+    url('../images/triathlon/tri-mobile-hero.jpg') center/cover no-repeat;
+
+  @media (min-width: 760px) {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url('../images/triathlon/tri-hero.jpg') center/cover no-repeat;
+  }
+
+  &__wrap {
+    padding-top: 35vh;
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: flex-start;
+
+    // @media (min-width: 760px) {
+    //   padding-top: 35vh;
+    // }
+  }
+  &__title {
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 130%;
+    color: $accent-color;
+    text-transform: uppercase;
+    @media (min-width: 760px) {
+      font-size: 64px;
+    }
+  }
+  &__title-italic {
+    font-style: italic;
+    font-weight: 800;
+  }
+
+  &__text {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 140%;
+    color: $accent-color;
+    margin-top: 20px;
+    @media (min-width: 760px) {
+      display: none;
+    }
+  }
+
+  &__btn {
+    margin-top: 80px;
+    border: none;
+    width: 164.5px;
+    height: 32px;
+
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 120%;
+    color: $primary-bg-color;
+    background-color: $accent-color;
+    border: 1px solid $accent-color;
+    border-radius: 4px;
+
+    transition: $transition;
+    transition-timing-function: $cubic-bezier;
+    &:hover {
+      background-color: transparent;
+      color: $accent-color;
+      border: 1px solid $accent-color;
+    }
+    @media (min-width: 760px) {
+      font-size: 16px;
+      width: 233px;
+      height: 41px;
+      border-radius: 8px;
+    }
+  }
+  &__pin {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    display: inline-block;
+    height: 33px;
+    width: 11px;
+
+    background: url('../images/triathlon/pin.png') center/cover no-repeat;
+  }
+}

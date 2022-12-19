@@ -1,0 +1,2 @@
+var tri=document.querySelector(".hero__thumb-triatlon"),run=document.querySelector(".hero__thumb-run");tri.addEventListener("touchstart",(function(){tri.addEventListener("touchend",endFncTri)}),!0);var endFncTri=function(n){var e=n.changedTouches[0].screenY;console.log("y :>> ",e),e>550&&(document.location.href="../triatlon.html")};run.addEventListener("touchstart",(function(){run.addEventListener("touchend",endFncRun)}),!0);var endFncRun=function(n){n.changedTouches[0].screenY<300&&(document.location.href="../run.html")};
+//# sourceMappingURL=index.42698336.js.map

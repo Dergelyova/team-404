@@ -1,12 +1,12 @@
 .tri {
-  //   margin-top: 20px;
   height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
     url('../images/triathlon/hero/tri-mobile-hero.jpg') center/cover no-repeat;
 
   @media (min-width: 760px) {
+    margin-top: 115px;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-      url('../images/triathlon/hero/tri-hero.jpg') center/cover no-repeat;
+      url('../images/triathlon/hero/tri-hero.gif') center/cover no-repeat;
   }
 
   &__wrap {
@@ -16,11 +16,8 @@
     flex-direction: column;
     align-content: center;
     align-items: flex-start;
-
-    // @media (min-width: 760px) {
-    //   padding-top: 35vh;
-    // }
   }
+
   &__title {
     font-size: 27px;
     font-weight: 400;
@@ -31,6 +28,7 @@
       font-size: 64px;
     }
   }
+
   &__title-italic {
     font-style: italic;
     font-weight: 800;
@@ -78,7 +76,7 @@
   }
   &__pin {
     position: absolute;
-    bottom: 0;
+    bottom: -115px;
     left: 50%;
     display: inline-block;
     height: 33px;

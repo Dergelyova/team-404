@@ -22,9 +22,16 @@
     align-items: center;
     @media (min-width: 760px) {
       display: grid;
-      column-gap: 30px;
-      row-gap: 30px;
+      // column-gap: 15px;
+      // row-gap: 15px;
       min-height: 1200px;
+      max-width: 1030px;
+      gap: 15px;
+      // align-self: center;
+      // justify-items: center;
+      justify-content: space-between;
+      // align-content: space-evenly;
+      // margin: 0 auto;
 
       grid-template-columns: 25% 25% 25% 25%;
       grid-template-rows: 25% 25% 25% 25%;
@@ -36,10 +43,10 @@
     }
     @media (min-width: 1200px) {
       display: grid;
-      column-gap: 30px;
-      row-gap: 30px;
+      // column-gap: 30px;
+      // row-gap: 30px;
       min-height: 800px;
-      max-width: 1160px;
+      max-width: 1030px;
 
       grid-template-columns: 25% 25% 25% 25%;
       grid-template-rows: 33% 33% 33%;
@@ -144,50 +151,39 @@
   @media (min-width: 760px) {
     &__item-one {
       grid-area: one;
-      width: 100%;
-      height: 100%;
     }
     &__item-two {
       grid-area: two;
-      width: 100%;
-      height: 100%;
     }
     &__item-three {
       grid-area: three;
-      width: 100%;
-      height: 100%;
     }
     &__item-four {
       grid-area: four;
-      width: 100%;
-      height: 100%;
     }
     &__item-five {
       grid-area: five;
-      width: 100%;
-      height: 100%;
     }
     &__item-six {
       grid-area: six;
-      width: 100%;
-      height: 100%;
     }
     &__item-seven {
       grid-area: seven;
-      width: 100%;
-      height: 100%;
     }
 
     &__numbers-big {
       font-size: 120px;
     }
+
     &__numbers {
       font-size: 64px;
     }
+
     &__text-big {
       font-size: 24px;
       line-height: 130%;
     }
+
     &__text {
       font-size: 16px;
       line-height: 130%;

@@ -16,11 +16,8 @@
     flex-direction: column;
     align-content: center;
     align-items: flex-start;
-
-    // @media (min-width: 760px) {
-    //   padding-top: 35vh;
-    // }
   }
+
   &__title {
     font-size: 27px;
     font-weight: 400;
@@ -31,6 +28,7 @@
       font-size: 64px;
     }
   }
+
   &__title-italic {
     font-style: italic;
     font-weight: 800;

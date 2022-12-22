@@ -2,20 +2,20 @@
 // // // import Swiper styles
 // import 'swiper/css';
 // core version + navigation, pagination modules:
-import Swiper, { Navigation, Pagination } from 'swiper';
+// import Swiper, { Navigation, Pagination } from 'swiper';
 
-// configure Swiper to use modules
-Swiper.use([Navigation, Pagination]);
+// // configure Swiper to use modules
+// Swiper.use([Navigation, Pagination]);
 
-import 'swiper/scss';
-import 'swiper/modules/pagination/pagination.scss';
-import 'swiper/scss/bundle';
-import 'swiper/scss/navigation';
-import 'swiper/scss/pagination';
+// import 'swiper/scss';
+// import 'swiper/modules/pagination/pagination.scss';
+// import 'swiper/scss/bundle';
+// import 'swiper/scss/navigation';
+// import 'swiper/scss/pagination';
 
 const swiper = new Swiper('.mySwiper', {
   //   modules: [Navigation, Pagination],
-  direction: 'vertical',
+  direction: 'horizontal',
   loop: true,
   speed: 400,
   navigation: {

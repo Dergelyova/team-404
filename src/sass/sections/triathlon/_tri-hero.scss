@@ -1,5 +1,7 @@
 .tri {
   height: 100vh;
+  position: relative;
+
   background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
     url('../images/triathlon/hero/tri-mobile-hero.jpg') center/cover no-repeat;
 
@@ -76,7 +78,7 @@
   }
   &__pin {
     position: absolute;
-    bottom: -115px;
+    bottom: 0;
     left: 50%;
     display: inline-block;
     height: 33px;

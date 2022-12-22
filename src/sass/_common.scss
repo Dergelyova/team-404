@@ -19,6 +19,7 @@ body {
 }
 
 //===BUTTONS
+
 .button {
   display: inline-block;
   padding: 10px 22px;
@@ -36,12 +37,6 @@ body {
       cursor: pointer;
     }
   }
-
-  // &_accent-border {
-  //   background-color: $accentColor;
-  //   color: $lightColor;
-  //   border: 1px solid #ffffff;
-  // }
 
   // &_square {
   //   display: flex;

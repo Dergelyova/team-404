@@ -1098,10 +1098,8 @@ body {
   width: 320px;
   height: 320px;
   color: #fff;
-  background-color: #000;
-  border: 2px solid;
-  border-image-source: linear-gradient(#2b4aed, #ffe600);
-  border-image-slice: 1;
+  background: #000 padding-box padding-box;
+  border: 2px solid #0000;
   border-radius: 18px;
   flex-direction: column;
   align-items: center;
@@ -1109,6 +1107,15 @@ body {
   padding: 30px 35px;
   display: flex;
   position: relative;
+}
+
+.contact-form:after {
+  content: "";
+  z-index: -1;
+  background: linear-gradient(#2b4aed, #ffe600);
+  border-radius: 18px;
+  position: absolute;
+  inset: -2px;
 }
 
 @media (min-width: 1180px) {

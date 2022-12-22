@@ -156,8 +156,10 @@ a {
 
 body {
   color: #fff;
+  height: 100%;
   background-color: #020202;
   font-family: Montserrat;
+  position: relative;
 }
 
 section {
@@ -1137,6 +1139,7 @@ section {
 }
 
 .sucseed__wrap-info {
+  padding-bottom: 50px;
   position: relative;
 }
 
@@ -1164,43 +1167,23 @@ section {
 .swiper {
   width: 90%;
   height: 100%;
-  background-color: #007aff;
+  border: 1px dotted red;
 }
 
 .swiper-slide {
-  text-align: center;
   justify-content: center;
   align-items: center;
-  font-size: 18px;
   display: flex;
 }
 
 .swiper-pagination {
-  width: 12px;
-  height: 12px;
-  border: 1px solid #89d7d7;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #000;
   border-radius: 100%;
-  margin: 20px;
-}
-
-.swiper-pagination-bullet-active {
-  background-color: #89d7d7;
-}
-
-.swiper-pagination-bullet {
-  width: 20px;
-  height: 20px;
-  text-align: center;
-  color: #000;
-  opacity: 1;
-  background: #0003;
-  font-size: 12px;
-  line-height: 20px;
-}
-
-.swiper-pagination-bullet-active {
-  color: #fff;
-  background: #007aff;
+  position: absolute;
+  bottom: -1%;
+  left: 50%;
 }
 
 /*# sourceMappingURL=index.b07a87f3.css.map */

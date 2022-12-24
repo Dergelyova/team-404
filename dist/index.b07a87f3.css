@@ -1314,7 +1314,7 @@ section {
   color: #fff;
   background: #000 padding-box padding-box;
   border: 2px solid #0000;
-  border-radius: 18px;
+  border-radius: 8px;
   flex-direction: column;
   align-items: center;
   gap: 25px;
@@ -1328,7 +1328,7 @@ section {
   content: "";
   -webkit-mask-composite: xor;
   background: linear-gradient(#2b4aed, #ffe600);
-  border-radius: 18px;
+  border-radius: 8px;
   padding: 2px;
   position: absolute;
   inset: 0;
@@ -1348,6 +1348,15 @@ section {
   .contact-form {
     width: 416px;
     height: 362px;
+    border-width: 3px;
+    border-radius: 18px;
+    gap: 22px;
+    padding: 35px 30px;
+  }
+
+  .contact-form:after {
+    border-radius: 18px;
+    padding: 3px;
   }
 }
 

@@ -46,7 +46,10 @@
     font-size: 15px;
     font-weight: 600;
     line-height: 140%;
-    max-width: 175px;
+
+    @media (min-width: 1180px) {
+      font-size: 24px;
+    }
   }
 
   &__subtitle {
@@ -54,6 +57,9 @@
     font-size: 12px;
     font-weight: 500;
     line-height: 130%;
+    @media (min-width: 1180px) {
+      font-size: 16px;
+    }
   }
 
   &__form {

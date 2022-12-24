@@ -10,21 +10,22 @@
   background-clip: padding-box;
   border: 2px solid transparent;
   border-radius: 18px;
-
   color: $light-text-color;
   padding: 30px 35px;
   position: relative;
 
   &::after {
-    position: absolute;
-    top: -2px;
-    bottom: -2px;
-    left: -2px;
-    right: -2px;
-    background: linear-gradient(to bottom, #2b4aed, #ffe600);
-    content: '';
     z-index: -1;
+    content: '';
+    position: absolute;
+    inset: 0;
     border-radius: 18px;
+    padding: 2px;
+    background: linear-gradient(180deg, #2b4aed, #ffe600);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
   }
 
   @media (min-width: 1180px) {
@@ -47,8 +48,11 @@
     &::placeholder {
       color: $accent-color;
     }
-    &:focus {
+    &:focus-visible {
       color: $accent-color;
+      border-color: $accent-color;
+      border-width: 2px;
+      outline: none;
     }
   }
 
@@ -67,6 +71,7 @@
   }
 
   @media (min-width: 1180px) {
+    width: 233px;
     &__button {
       font-weight: 700;
       padding-inline: 26px;
@@ -79,8 +84,9 @@
     }
 
     &__input {
-      font-weight: 400;
+      font-weight: 500;
       height: 41px;
+      font-size: 12px;
     }
   }
 }

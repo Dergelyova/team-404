@@ -160,6 +160,10 @@ body {
   font-family: Montserrat;
 }
 
+body.lock {
+  overflow: hidden;
+}
+
 section {
   padding: 25px 0;
 }
@@ -266,10 +270,15 @@ section {
 
 .popup__title {
   text-align: center;
-  max-width: 175px;
   font-size: 15px;
   font-weight: 600;
   line-height: 140%;
+}
+
+@media (min-width: 1180px) {
+  .popup__title {
+    font-size: 24px;
+  }
 }
 
 .popup__subtitle {
@@ -277,6 +286,12 @@ section {
   font-size: 12px;
   font-weight: 500;
   line-height: 130%;
+}
+
+@media (min-width: 1180px) {
+  .popup__subtitle {
+    font-size: 16px;
+  }
 }
 
 .popup__form {
@@ -1065,6 +1080,7 @@ section {
 }
 
 .tri__btn:hover {
+  cursor: pointer;
   color: #89d7d7;
   background-color: #0000;
   border: 1px solid #89d7d7;
@@ -1308,12 +1324,24 @@ section {
 }
 
 .contact-form:after {
-  content: "";
   z-index: -1;
+  content: "";
+  -webkit-mask-composite: xor;
   background: linear-gradient(#2b4aed, #ffe600);
   border-radius: 18px;
+  padding: 2px;
   position: absolute;
-  inset: -2px;
+  inset: 0;
+  -webkit-mask-image: linear-gradient(#fff 0 0), linear-gradient(#fff 0 0);
+  -webkit-mask-position: 0 0, 0 0;
+  -webkit-mask-size: auto, auto;
+  -webkit-mask-repeat: repeat, repeat;
+  -webkit-mask-clip: content-box, border-box;
+  -webkit-mask-origin: content-box, border-box;
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  -webkit-mask-source-type: auto, auto;
+  mask-mode: match-source, match-source;
 }
 
 @media (min-width: 1180px) {
@@ -1335,8 +1363,15 @@ section {
   font-weight: 400;
 }
 
-.form__input::placeholder, .form__input:focus {
+.form__input::placeholder {
   color: #89d7d7;
+}
+
+.form__input:focus-visible {
+  color: #89d7d7;
+  border-width: 2px;
+  border-color: #89d7d7;
+  outline: none;
 }
 
 .form__button {
@@ -1353,6 +1388,10 @@ section {
 }
 
 @media (min-width: 1180px) {
+  .form {
+    width: 233px;
+  }
+
   .form__button {
     height: 41px;
     align-items: center;
@@ -1367,7 +1406,8 @@ section {
 
   .form__input {
     height: 41px;
-    font-weight: 400;
+    font-size: 12px;
+    font-weight: 500;
   }
 }
 

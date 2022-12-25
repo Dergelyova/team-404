@@ -65,6 +65,7 @@
     transition: $transition;
     transition-timing-function: $cubic-bezier;
     &:hover {
+      cursor: pointer;
       background-color: transparent;
       color: $accent-color;
       border: 1px solid $accent-color;

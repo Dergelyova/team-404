@@ -9,9 +9,7 @@
   </head>
   <body>
     <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <!-- <include src="./partials/test.html"></include>
-    <include src="./partials/test2.html"></include> -->
-    <header id="header" class="header">
+    <header id="header" class="header lock-padding">
   <div class="container header__body">
     <div class="header__logo-wrapper">
       <a href="/index.html" class="header__logo">
@@ -25,8 +23,8 @@
     </div>
 
     <div class="header__actions">
-      <a href="#popup-form" type="button" class="button button_accent popup-link header__cta">
-        Записаться
+      <a href="#popup-form" type="button" class="button popup-link header__cta">
+        Записатись
       </a>
       <button class="header__lang-btn">ua</button>
       <div class="header__burger">
@@ -63,7 +61,7 @@
   </div>
 </header>
 
-    <main>
+    <main class="wrapper">
       <section class="hero">
   <div class="hero__link-wrapper">
     <a id="tri" class="hero__link" href="/triathlon.html">
@@ -82,11 +80,33 @@
 </section>
 
     </main>
+    <div id="popup-form" class="popup">
+  <div class="popup__body">
+    <div class="popup__content contact-form">
+      <a class="popup__close popup__close_small close-popup close-icon close-icon_small"><span></span></a>
+      <div class="popup__title">Ви за крок до мети</div>
+      <div class="popup__subtitle">
+        Залишіть заявку, наш менеджер набере вас найближчим часом і розкаже, як
+        розпочати тренування у team404
+      </div>
+      <div class="popup__form form">
+        <form autocomplete="off" id="form" action="" method="POST">
+          <input id="form-name" type="text" name="name" placeholder="Імʼя" class="form__input" required="">
+
+          <input type="tel" id="phone" name="phone" placeholder="Номер телефону" class="form__input" autocomplete="off" required="">
+
+          <input type="submit" class="button button_accent form__button" value="Відправити">
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
 
     <!-- JS -->
 
     <script src="/triathlon.e74b110d.js"></script>
     <script src="/index.d3dbad53.js"></script>
     <script src="/index.969649e4.js"></script>
+    <script src="/triathlon.9b9c0c05.js"></script>
   </body>
 </html>

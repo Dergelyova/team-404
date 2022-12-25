@@ -156,8 +156,10 @@ a {
 
 body {
   color: #fff;
+  height: 100%;
   background-color: #020202;
   font-family: Montserrat;
+  position: relative;
 }
 
 body.lock {
@@ -1117,6 +1119,7 @@ section {
 .tri {
   height: 100vh;
   background: linear-gradient(#000000d9, #000000d9), url("tri-mobile-hero.9b7ae1ff.jpg") center / cover no-repeat;
+  position: relative;
 }
 
 @media (min-width: 760px) {
@@ -1204,13 +1207,21 @@ section {
   background: url("pin.2c16c550.png") center / cover no-repeat;
   display: inline-block;
   position: absolute;
-  bottom: -115px;
+  bottom: 0;
   left: 50%;
 }
 
 .achievements {
   height: 100%;
   background: url("background.f22d5e24.png") center / contain;
+  padding: 25px 0;
+}
+
+.achievements__wraper {
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
 }
 
 .achievements__title {
@@ -1225,40 +1236,38 @@ section {
 
 @media (min-width: 760px) {
   .achievements__title {
+    margin-bottom: 40px;
     font-size: 40px;
   }
 }
 
 .achievements__list {
-  flex-direction: column;
-  align-items: center;
-  display: flex;
+  place-items: center;
+  gap: 15px;
+  display: grid;
 }
 
 @media (min-width: 760px) {
   .achievements__list {
     min-height: 1200px;
-    max-width: 1030px;
+    width: 90%;
     grid-template: "one one one one" 25%
                    "one one one one" 25%
                    "two three four five" 25%
                    "six six seven seven" 25%
                    / 25% 25% 25% 25%;
-    justify-content: space-between;
-    gap: 15px;
-    display: grid;
+    align-content: space-around;
+    margin-bottom: 30px;
   }
 }
 
 @media (min-width: 1200px) {
   .achievements__list {
-    min-height: 800px;
-    max-width: 1030px;
+    max-width: 1100px;
     grid-template: "one one two three" 33%
                    "one one four five" 33%
                    "six six seven seven" 33%
                    / 25% 25% 25% 25%;
-    display: grid;
   }
 }
 
@@ -1267,7 +1276,6 @@ section {
   height: 320px;
   text-align: center;
   border: 1px solid #89d7d7;
-  margin: 12px 0;
   display: inline-block;
   position: relative;
 }
@@ -1305,7 +1313,6 @@ section {
   height: 180px;
   text-align: center;
   border: 1px solid #89d7d7;
-  margin: 12px 0;
   display: inline-block;
   position: relative;
 }
@@ -1326,6 +1333,18 @@ section {
   display: flex;
 }
 
+@media (min-width: 760px) {
+  .achievements__item-thumb-rectangle {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 1200px) {
+  .achievements__item-thumb-rectangle {
+    flex-direction: row;
+  }
+}
+
 .achievements__text-rectangle {
   color: #89d7d7;
   font-size: 19px;
@@ -1340,7 +1359,7 @@ section {
 }
 
 .achievements__wrap-rectangle {
-  height: 50%;
+  height: 40%;
   flex-direction: column;
   justify-content: space-between;
   display: flex;
@@ -1589,6 +1608,238 @@ section {
   }
 }
 
+
+.sucseed {
+  background-color: #89d7d7;
+  padding: 0;
+}
+
+.sucseed__container {
+  padding: 0;
+}
+
+@media (min-width: 760px) {
+  .sucseed__container {
+    display: flex;
+  }
+}
+
+.sucseed__bg {
+  background: linear-gradient(#89d7d7b3, #89d7d7b3), url("bg.bca7b10b.jpg") center / cover no-repeat;
+  position: relative;
+}
+
+.sucseed__title {
+  color: #000;
+  padding: 25px 20px;
+  font-size: 19px;
+  font-style: italic;
+  font-weight: 900;
+  line-height: 120%;
+}
+
+@media (min-width: 760px) {
+  .sucseed__title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 40px;
+  }
+}
+
+.sucseed__list {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 25px 20px;
+  display: flex;
+}
+
+@media (min-width: 760px) {
+  .sucseed__list {
+    justify-content: space-around;
+  }
+}
+
+.sucseed__item {
+  width: calc(50% - 15px);
+  text-align: center;
+  border: 2px solid #0000;
+  margin-bottom: 30px;
+  padding: 5px;
+}
+
+@media (min-width: 760px) {
+  .sucseed__item {
+    max-width: 300px;
+  }
+}
+
+.sucseed__text {
+  color: #000;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 130%;
+}
+
+@media (min-width: 760px) {
+  .sucseed__text {
+    font-size: 16px;
+  }
+}
+
+.sucseed__icon {
+  width: 32px;
+}
+
+@media (min-width: 760px) {
+  .sucseed__icon {
+    width: 62px;
+    margin-bottom: 21px;
+  }
+}
+
+.sucseed__wrap-info {
+  padding-bottom: 50px;
+  position: relative;
+}
+
+@media (min-width: 760px) {
+  .sucseed__wrap-info {
+    width: 100%;
+    min-height: 100%;
+    padding: 0 40px;
+    overflow: hidden;
+  }
+}
+
+.sucseed__triangle {
+  position: absolute;
+  top: -30px;
+  left: 20px;
+}
+
+@media (min-width: 760px) {
+  .sucseed__triangle {
+    display: none;
+  }
+}
+
+.sucseed__triangle-left {
+  display: none;
+}
+
+@media (min-width: 760px) {
+  .sucseed__triangle-left {
+    display: block;
+    position: absolute;
+    top: 90px;
+    right: -25px;
+  }
+}
+
+.sucseed__info-text {
+  color: #000;
+  width: 90%;
+  padding: 25px 0;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 140%;
+}
+
+.sucseed__info-bg-flower-mob {
+  position: absolute;
+  bottom: 10%;
+  right: -10px;
+}
+
+@media (min-width: 760px) {
+  .sucseed__info-bg-flower-mob {
+    display: none;
+  }
+}
+
+.sucseed__info-bg-flower-desc-1 {
+  display: none;
+}
+
+@media (min-width: 760px) {
+  .sucseed__info-bg-flower-desc-1 {
+    width: 120px;
+    height: 120px;
+    display: block;
+    position: absolute;
+    bottom: 70%;
+    right: -30px;
+  }
+}
+
+.sucseed__info-bg-flower-desc-2 {
+  display: none;
+}
+
+@media (min-width: 760px) {
+  .sucseed__info-bg-flower-desc-2 {
+    width: 150px;
+    height: 150px;
+    display: block;
+    position: absolute;
+    bottom: 40%;
+    right: 60%;
+  }
+}
+
+@media (min-width: 990px) {
+  .sucseed__info-bg-flower-desc-2 {
+    width: 150px;
+    height: 150px;
+    display: block;
+    position: absolute;
+    bottom: 25%;
+    right: 60%;
+  }
+}
+
+.sucseed__info-bg-flower-desc-3 {
+  display: none;
+}
+
+@media (min-width: 760px) {
+  .sucseed__info-bg-flower-desc-3 {
+    width: 300px;
+    height: 300px;
+    display: block;
+    position: absolute;
+    bottom: 10px;
+    right: -35%;
+  }
+}
+
+@media (min-width: 990px) {
+  .sucseed__info-bg-flower-desc-3 {
+    width: 300px;
+    height: 300px;
+    display: block;
+    position: absolute;
+    bottom: 10px;
+    right: -15%;
+  }
+}
+
+.swiper {
+  width: 100%;
+  height: 200px;
+}
+
+@media (min-width: 760px) {
+  .swiper {
+    height: 340px;
+    position: absolute;
+    top: 0;
+  }
+}
+
+.swiper-slide {
+  text-align: start;
+
 .contact-form {
   width: 320px;
   height: 320px;
@@ -1668,10 +1919,84 @@ section {
   width: 100%;
   height: 32px;
   border-radius: 8px;
+
   justify-content: center;
   align-items: center;
   display: flex;
 }
+
+.swiper-pagination {
+  position: absolute;
+  bottom: 0;
+}
+
+@media (min-width: 760px) {
+  .swiper-pagination {
+    display: none;
+  }
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  color: #000;
+  opacity: 1;
+  background-color: #0000;
+  border: 1px solid #000;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+@media (min-width: 760px) {
+  .swiper-pagination .swiper-pagination-bullet {
+    display: none;
+  }
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+  color: #fff;
+  background: #000;
+}
+
+@media (min-width: 760px) {
+  .swiper-pagination .swiper-pagination-bullet-active {
+    display: none;
+  }
+}
+
+@media (max-width: 759px) {
+  .swiper-button-prev, .swiper-rtl .swiper-button-next {
+    display: none !important;
+  }
+}
+
+@media (min-width: 759px) {
+  .swiper-button-prev, .swiper-rtl .swiper-button-next {
+    background: url("arrow-left.076fba3a.png") center / contain no-repeat;
+    width: 39px !important;
+    height: 30px !important;
+    color: #0000 !important;
+    position: absolute !important;
+    top: 74px !important;
+    left: 60% !important;
+  }
+}
+
+@media (max-width: 759px) {
+  .swiper-button-next {
+    display: none !important;
+  }
+}
+
+@media (min-width: 759px) {
+  .swiper-button-next {
+    background: url("arrow-right.834e640e.png") center / contain no-repeat;
+    width: 39px !important;
+    height: 30px !important;
+    color: #0000 !important;
+    position: absolute !important;
+    top: 74px !important;
+    left: 80% !important;
 
 .form__button:hover {
   cursor: pointer;
@@ -1698,6 +2023,7 @@ section {
     height: 41px;
     font-size: 12px;
     font-weight: 500;
+
   }
 }
 

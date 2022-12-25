@@ -8,6 +8,10 @@ body {
   // overflow: hidden;
 }
 
+body.lock {
+  overflow: hidden;
+}
+
 section {
   padding: 25px 0;
 }
@@ -17,5 +21,55 @@ section {
 
   @media (min-width: 768px) {
     max-width: 1160px;
+  }
+}
+
+//===BUTTONS
+
+.button {
+  display: inline-block;
+  padding: 10px 22px;
+  font-weight: 600;
+  border-radius: 8px;
+
+  &_accent {
+    background-color: $accent-color;
+    color: $dark-text-color;
+
+    &:hover {
+      border: 1px solid $accent-color;
+      color: $accent-color;
+      background-color: transparent;
+      cursor: pointer;
+    }
+  }
+
+  // &_square {
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   text-align: center;
+  //   border-radius: 0;
+  // }
+
+  &__span {
+    display: none;
+  }
+
+  @media (min-width: 1180px) {
+    font-weight: 700;
+    padding-inline: 26px;
+    height: 41px;
+    display: inline-flex;
+    align-items: center;
+    &__span {
+      display: inline;
+    }
+  }
+}
+
+.icon-button {
+  &:hover {
+    cursor: pointer;
   }
 }

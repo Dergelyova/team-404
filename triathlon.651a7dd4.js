@@ -1,0 +1,2 @@
+function _defineProperty(e,n,i){return n in e?Object.defineProperty(e,n,{value:i,enumerable:!0,configurable:!0,writable:!0}):e[n]=i,e}var swiper=new Swiper(".mySwiper",_defineProperty({direction:"horizontal",loop:!0,speed:400,navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"},pagination:{el:".swiper-pagination",type:"bullets",clickable:!0}},"navigation",{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"}));
+//# sourceMappingURL=triathlon.651a7dd4.js.map

@@ -6,6 +6,8 @@ body {
   color: $light-text-color;
   font-family: $fontFamily;
   // overflow: hidden;
+  position: relative;
+  height: 100%;
 }
 
 body.lock {

@@ -2,6 +2,14 @@
   height: 100%;
   background: url('../images/triathlon/achievements/background.png')
     center/contain;
+  padding: 25px 0;
+
+  &__wraper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+  }
 
   &__title {
     font-style: italic;
@@ -13,25 +21,20 @@
     margin-bottom: 20px;
     @media (min-width: 760px) {
       font-size: 40px;
+      margin-bottom: 40px;
     }
   }
 
   &__list {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    gap: 15px;
+
+    justify-items: center;
     align-items: center;
+
     @media (min-width: 760px) {
-      display: grid;
-      // column-gap: 15px;
-      // row-gap: 15px;
       min-height: 1200px;
-      max-width: 1030px;
-      gap: 15px;
-      // align-self: center;
-      // justify-items: center;
-      justify-content: space-between;
-      // align-content: space-evenly;
-      // margin: 0 auto;
+      width: 90%;
 
       grid-template-columns: 25% 25% 25% 25%;
       grid-template-rows: 25% 25% 25% 25%;
@@ -40,14 +43,11 @@
         'one one one one'
         'two three four five'
         'six six seven seven';
+      align-content: space-around;
+      margin-bottom: 30px;
     }
     @media (min-width: 1200px) {
-      display: grid;
-      // column-gap: 30px;
-      // row-gap: 30px;
-      min-height: 800px;
-      max-width: 1030px;
-
+      max-width: 1100px;
       grid-template-columns: 25% 25% 25% 25%;
       grid-template-rows: 33% 33% 33%;
       grid-template-areas:
@@ -59,7 +59,6 @@
 
   &__item {
     position: relative;
-    margin: 12px 0;
     border: 1px solid $accent-color;
     display: inline-block;
     width: 320px;
@@ -96,7 +95,7 @@
 
   &__item-rectangle {
     position: relative;
-    margin: 12px 0;
+    // margin: 12px 0;
     border: 1px solid $accent-color;
     display: inline-block;
     width: 320px;
@@ -115,6 +114,12 @@
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
+    @media (min-width: 760px) {
+      flex-direction: column;
+    }
+    @media (min-width: 1200px) {
+      flex-direction: row;
+    }
   }
 
   &__text-rectangle {
@@ -128,7 +133,7 @@
   }
 
   &__wrap-rectangle {
-    height: 50%;
+    height: 40%;
     display: flex;
     justify-content: space-between;
     flex-direction: column;

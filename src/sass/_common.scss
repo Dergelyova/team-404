@@ -63,13 +63,11 @@ section {
     }
   }
 
-  // &_square {
-  //   display: flex;
-  //   justify-content: center;
-  //   align-items: center;
-  //   text-align: center;
-  //   border-radius: 0;
-  // }
+  &_accent-border {
+    background-color: transparent;
+    color: $accent-color;
+    border: 1px solid $accent-color;
+  }
 
   &__span {
     display: none;
@@ -86,6 +84,14 @@ section {
     &__span {
       display: inline;
     }
+  }
+
+  &_square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 0;
   }
 }
 

@@ -1,0 +1,11 @@
+{
+  "run": {
+    "key": "Run"
+  },
+  "tri": {
+    "key": "Triatlon"
+  },
+  "choose": {
+    "key": "Choose direction"
+  }
+}

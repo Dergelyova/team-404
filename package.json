@@ -5,7 +5,7 @@
   "homepage": "https://dergelyova.github.io/team-404",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /team-404/"
+    "build": "parcel build src/*.html src/en/*.html --public-url /team-404/"
   },
   "repository": {
     "type": "git",
@@ -14,7 +14,8 @@
   "keywords": [],
   "license": "ISC",
   "dependencies": {
-    "modern-normalize": "^1.1.0"
+    "modern-normalize": "^1.1.0",
+    "static-i18n": "^0.2.10"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.6.0",

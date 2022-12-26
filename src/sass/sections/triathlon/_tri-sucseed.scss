@@ -1,10 +1,67 @@
 .sucseed {
   background-color: $accent-color;
   padding: 0;
+  overflow: hidden;
+  position: relative;
 
-  // @media (min-width: 760px) {
-  //   height: 100vh;
-  // }
+  &__info-bg-flower-desc-1 {
+    display: none;
+
+    @media (min-width: 760px) {
+      display: block;
+      position: absolute;
+      right: -30px;
+      bottom: 70%;
+
+      width: 120px;
+      height: 120px;
+    }
+  }
+
+  &__info-bg-flower-desc-2 {
+    display: none;
+    @media (min-width: 760px) {
+      display: block;
+      position: absolute;
+      right: 15%;
+      bottom: 40%;
+
+      width: 150px;
+      height: 150px;
+    }
+
+    @media (min-width: 990px) {
+      display: block;
+      position: absolute;
+      right: 25%;
+      bottom: 25%;
+
+      width: 150px;
+      height: 150px;
+    }
+  }
+
+  &__info-bg-flower-desc-3 {
+    display: none;
+    @media (min-width: 760px) {
+      display: block;
+      position: absolute;
+      right: -5%;
+      bottom: 10px;
+
+      width: 300px;
+      height: 300px;
+    }
+    @media (min-width: 990px) {
+      display: block;
+      position: absolute;
+      right: -3%;
+      bottom: 10px;
+
+      width: 300px;
+      height: 300px;
+    }
+  }
 
   &__container {
     padding: 0;
@@ -28,7 +85,7 @@
     font-size: 19px;
     line-height: 120%;
     color: $dark-text-color;
-
+    text-transform: uppercase;
     padding: 25px 20px;
 
     @media (min-width: 760px) {
@@ -135,65 +192,6 @@
       display: none;
     }
   }
-
-  &__info-bg-flower-desc-1 {
-    display: none;
-
-    @media (min-width: 760px) {
-      display: block;
-      position: absolute;
-      right: -30px;
-      bottom: 70%;
-
-      width: 120px;
-      height: 120px;
-    }
-  }
-
-  &__info-bg-flower-desc-2 {
-    display: none;
-    @media (min-width: 760px) {
-      display: block;
-      position: absolute;
-      right: 60%;
-      bottom: 40%;
-
-      width: 150px;
-      height: 150px;
-    }
-
-    @media (min-width: 990px) {
-      display: block;
-      position: absolute;
-      right: 60%;
-      bottom: 25%;
-
-      width: 150px;
-      height: 150px;
-    }
-  }
-
-  &__info-bg-flower-desc-3 {
-    display: none;
-    @media (min-width: 760px) {
-      display: block;
-      position: absolute;
-      right: -35%;
-      bottom: 10px;
-
-      width: 300px;
-      height: 300px;
-    }
-    @media (min-width: 990px) {
-      display: block;
-      position: absolute;
-      right: -15%;
-      bottom: 10px;
-
-      width: 300px;
-      height: 300px;
-    }
-  }
 }
 
 // ! SWIPER
@@ -204,7 +202,7 @@
   @media (min-width: 760px) {
     position: absolute;
     top: 0;
-    height: 340px;
+    height: 300px;
   }
 }
 

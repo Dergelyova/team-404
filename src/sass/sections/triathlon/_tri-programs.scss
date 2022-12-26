@@ -1,0 +1,168 @@
+.programs {
+  background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
+    url('../images/triathlon/programs/programs-bg.jpg') center/cover no-repeat;
+  @media (min-width: 760px) {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+      url('../images/triathlon/programs/programs.gif') center/cover no-repeat;
+  }
+  // .programs__wrap
+
+  &__wrap {
+    padding-bottom: 100px;
+  }
+
+  // .programs__title
+
+  &__title {
+    margin-top: 25px;
+    @media (min-width: 1200px) {
+      margin-top: 40px;
+    }
+  }
+
+  // .programs__subtitle
+
+  &__subtitle {
+    margin-top: 5px;
+    @media (min-width: 1200px) {
+      margin-top: 25px;
+    }
+  }
+
+  // .programs__cards
+
+  &__cards {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+
+    @media (min-width: 580px) {
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    @media (min-width: 1200px) {
+      margin-top: 30px;
+      gap: 30px;
+    }
+  }
+
+  // .programs__cta
+
+  &__cta {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    @media (min-width: 760px) {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+
+    @media (min-width: 1200px) {
+      margin-top: 64px;
+    }
+  }
+
+  // .programs__cta-text
+
+  &__cta-text {
+    text-align: center;
+    max-width: 330px;
+    @media (min-width: 760px) {
+      max-width: 500px;
+    }
+  }
+
+  // .programs__cta-button
+
+  &__cta-button {
+    width: 200px;
+    @media (min-width: 760px) {
+      width: 277px;
+    }
+  }
+}
+
+.cards {
+}
+
+.program-card {
+  // .program-card__head
+  max-width: 320px;
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  border: 1px solid $accent-color;
+  display: flex;
+  flex-direction: column;
+
+  &__head {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $accent-color;
+    text-align: center;
+    @media (min-width: 760px) {
+      height: 100px;
+    }
+  }
+
+  // .program-card__body
+
+  &__body {
+    flex: 1;
+  }
+
+  // .program-card__actions
+
+  &__actions {
+    margin-bottom: 27px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 13px;
+  }
+  @media (min-width: 760px) {
+    width: 267px;
+    height: 527px;
+  }
+}
+
+.checked-list {
+  // .checked-list_item
+  margin-inline: 10%;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 15.6px;
+  justify-content: center;
+
+  &_first {
+    margin-top: 11%;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    &::before {
+      content: 'L';
+      margin-right: 14px;
+      font-family: arial;
+      font-weight: 600;
+      color: $accent-color;
+      display: inline-flex;
+      align-self: baseline;
+      -ms-transform: scaleX(-1) rotate(-35deg); /* IE 9 */
+      -webkit-transform: scaleX(-1) rotate(-35deg); /* Chrome, Safari, Opera */
+      transform: scaleX(-1) rotate(-45deg);
+    }
+  }
+
+  @media (min-width: 760px) {
+    margin-inline: 19px 15px;
+  }
+}

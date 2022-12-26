@@ -9,7 +9,7 @@
   background: $dark-text-color;
   background-clip: padding-box;
   border: 2px solid transparent;
-  border-radius: 8px;
+  border-radius: 13px;
   color: $light-text-color;
   padding: 30px 35px;
   position: relative;
@@ -32,7 +32,7 @@
     gap: 22px;
     width: 416px;
     height: 362px;
-    border-radius: 18px;
+    border-radius: 23px;
     border-width: 3px;
     padding: 35px 30px;
     &::after {

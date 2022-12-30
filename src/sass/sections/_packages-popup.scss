@@ -1,25 +1,31 @@
-.packages {
-  height: 100%;
-  background: url('../images/triathlon/packages/background.png') center/contain;
-  padding: 25px 0;
-  //  @media (min-width: 1200px) {
-  //     }
-  &__title {
-    font-style: italic;
-    font-weight: 900;
-    font-size: 19px;
-    line-height: 120%;
-    color: $accent-color;
+.content-packages {
+  width: 100vw;
+  max-width: 1440px;
 
+  background-color: #000000;
+  color: $accent-color;
+  padding: 70px 20px 20px 20px;
+  position: relative;
+  transition: all 0.8s ease 0s;
+  opacity: 0;
+  transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
+
+  &__logo {
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    height: 25px;
     @media (min-width: 760px) {
-      font-size: 40px;
+      top: 25px;
+      left: 36px;
+      height: 44px;
     }
   }
 
   &__list {
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
+
     justify-content: center;
     margin: 0 auto;
 
@@ -32,7 +38,7 @@
     position: relative;
     border: 1px solid $accent-color;
     width: 320px;
-    height: 430px;
+    height: 625px;
     padding: 27px;
     margin: 15px;
     background: rgba(0, 0, 0, 0.42);
@@ -40,7 +46,7 @@
 
     @media (min-width: 1200px) {
       width: 367px;
-      height: 557px;
+      height: 685px;
     }
   }
 
@@ -112,6 +118,7 @@
     font-size: 22px;
     line-height: 105.5%;
     margin-bottom: 10px;
+    color: $light-text-color;
     @media (min-width: 1200px) {
       font-size: 28px;
       line-height: 120%;
@@ -131,54 +138,47 @@
   }
 
   &__features-list {
-    list-style: disc;
-
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 130%;
-    padding-left: 20px;
-
-    @media (min-width: 1200px) {
-      font-size: 16px;
-    }
-  }
-
-  &__features-item:not(:last-child) {
-    margin-bottom: 10px;
-  }
-
-  &__list-btn-wrap {
-    height: 60%;
+    height: 360px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
 
-  &__btn-wrap {
+  &__features-item {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-between;
   }
 
-  &__buy-btn,
-  &__more-btn {
-    font-weight: 700;
+  &__features-point {
+    font-weight: 500;
     font-size: 12px;
-    // line-height: 120%;
+    line-height: 123%;
+    color: #d2d2d2;
+  }
+
+  &__features-stats {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 130%;
+    text-align: end;
+  }
+
+  &__btn {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
 
     border: none;
     cursor: pointer;
-    @media (min-width: 1200px) {
-      font-size: 16px;
-    }
-  }
-
-  &__buy-btn {
     background-color: $accent-color;
     color: $dark-text-color;
     text-align: center;
-    padding-top: 10px;
+
     width: 155px;
     height: 32px;
     border-radius: 4px;
@@ -187,6 +187,7 @@
 
     transition: $transition;
     transition-timing-function: $cubic-bezier;
+
     &:hover {
       background-color: transparent;
       color: $accent-color;
@@ -194,25 +195,8 @@
     }
 
     @media (min-width: 1200px) {
-      width: 200px;
+      width: 220px;
       height: 41px;
-    }
-  }
-
-  &__more-btn {
-    background-color: transparent;
-    color: $accent-color;
-    padding-bottom: 2px;
-    border-top: 2px solid transparent;
-    border-bottom: 2px solid $accent-color;
-    width: fit-content;
-    padding-bottom: 3px;
-
-    transition: $transition;
-    transition-timing-function: $cubic-bezier;
-
-    &:hover {
-      transform: scale(1.1);
     }
   }
 }

@@ -1,0 +1,214 @@
+.packages {
+  height: 100%;
+  background: url('../images/triathlon/packages/background.png') center/contain;
+  padding: 25px 0;
+  //  @media (min-width: 1200px) {
+  //     }
+  &__title {
+    font-style: italic;
+    font-weight: 900;
+    font-size: 19px;
+    line-height: 120%;
+    color: $accent-color;
+
+    @media (min-width: 760px) {
+      font-size: 40px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+
+    @media (min-width: 1200px) {
+      flex-wrap: nowrap;
+    }
+  }
+
+  &__item {
+    position: relative;
+    border: 1px solid $accent-color;
+    width: 320px;
+    height: 430px;
+    padding: 27px;
+    margin: 15px;
+    background: rgba(0, 0, 0, 0.42);
+    border-radius: 8px;
+
+    @media (min-width: 1200px) {
+      width: 367px;
+      height: 557px;
+    }
+  }
+
+  &__icon-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: absolute;
+    right: 30px;
+  }
+
+  &__icon {
+    width: 27px;
+    height: 21px;
+    @media (min-width: 760px) {
+      width: 46px;
+      height: 30px;
+    }
+  }
+
+  &__icon-text {
+    font-weight: 700;
+    font-size: 8px;
+    line-height: 120%;
+    color: $accent-color;
+    @media (min-width: 760px) {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 123%;
+    }
+  }
+
+  &__membership {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 125%;
+    color: $accent-color;
+    padding-bottom: 2px;
+    border-bottom: 2px solid $accent-color;
+    width: fit-content;
+    margin-bottom: 20px;
+
+    @media (min-width: 1200px) {
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 140%;
+    }
+  }
+
+  &__price-crossed-wrap {
+    position: relative;
+  }
+
+  &__price-crossed {
+    position: absolute;
+    width: 70px;
+    top: 5px;
+    left: -7px;
+
+    @media (min-width: 1200px) {
+      width: 77px;
+      left: -3px;
+    }
+  }
+
+  &__old-price {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 105.5%;
+    margin-bottom: 10px;
+    @media (min-width: 1200px) {
+      font-size: 28px;
+      line-height: 120%;
+    }
+  }
+
+  &__price {
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 105.5%;
+    color: $accent-color;
+    margin-bottom: 20px;
+    @media (min-width: 1200px) {
+      font-size: 40px;
+      line-height: 120%;
+    }
+  }
+
+  &__features-list {
+    list-style: disc;
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 130%;
+    padding-left: 20px;
+
+    @media (min-width: 1200px) {
+      font-size: 16px;
+    }
+  }
+
+  &__features-item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  &__list-btn-wrap {
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__btn-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  &__buy-btn,
+  &__more-btn {
+    font-weight: 700;
+    font-size: 12px;
+    // line-height: 120%;
+    border: none;
+    cursor: pointer;
+    @media (min-width: 1200px) {
+      font-size: 16px;
+    }
+  }
+
+  &__buy-btn {
+    background-color: $accent-color;
+    width: 155px;
+    height: 32px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    border: 1px solid $accent-color;
+
+    transition: $transition;
+    transition-timing-function: $cubic-bezier;
+    &:hover {
+      background-color: transparent;
+      color: $accent-color;
+      border: 1px solid $accent-color;
+    }
+
+    @media (min-width: 1200px) {
+      width: 200px;
+      height: 41px;
+    }
+  }
+
+  &__more-btn {
+    background-color: transparent;
+    color: $accent-color;
+    padding-bottom: 2px;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid $accent-color;
+    width: fit-content;
+    padding-bottom: 3px;
+
+    transition: $transition;
+    transition-timing-function: $cubic-bezier;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}

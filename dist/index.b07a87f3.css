@@ -2670,6 +2670,241 @@ section {
   transform: rotateY(180deg);
 }
 
+.packages {
+  height: 100%;
+  background: url("background.c3b333de.png") center / contain;
+  padding: 25px 0;
+}
+
+.packages__title {
+  color: #89d7d7;
+  font-size: 19px;
+  font-style: italic;
+  font-weight: 900;
+  line-height: 120%;
+}
+
+@media (min-width: 760px) {
+  .packages__title {
+    font-size: 40px;
+  }
+}
+
+.packages__list {
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  display: flex;
+}
+
+@media (min-width: 1200px) {
+  .packages__list {
+    flex-wrap: nowrap;
+  }
+}
+
+.packages__item {
+  width: 320px;
+  height: 430px;
+  background: #0000006b;
+  border: 1px solid #89d7d7;
+  border-radius: 8px;
+  margin: 15px;
+  padding: 27px;
+  position: relative;
+}
+
+@media (min-width: 1200px) {
+  .packages__item {
+    width: 367px;
+    height: 557px;
+  }
+}
+
+.packages__icon-wrap {
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  position: absolute;
+  right: 30px;
+}
+
+.packages__icon {
+  width: 27px;
+  height: 21px;
+}
+
+@media (min-width: 760px) {
+  .packages__icon {
+    width: 46px;
+    height: 30px;
+  }
+}
+
+.packages__icon-text {
+  color: #89d7d7;
+  font-size: 8px;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+@media (min-width: 760px) {
+  .packages__icon-text {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 123%;
+  }
+}
+
+.packages__membership {
+  color: #89d7d7;
+  width: fit-content;
+  border-bottom: 2px solid #89d7d7;
+  margin-bottom: 20px;
+  padding-bottom: 2px;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 125%;
+}
+
+@media (min-width: 1200px) {
+  .packages__membership {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 140%;
+  }
+}
+
+.packages__price-crossed-wrap {
+  position: relative;
+}
+
+.packages__price-crossed {
+  width: 70px;
+  position: absolute;
+  top: 5px;
+  left: -7px;
+}
+
+@media (min-width: 1200px) {
+  .packages__price-crossed {
+    width: 77px;
+    left: -3px;
+  }
+}
+
+.packages__old-price {
+  margin-bottom: 10px;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 105.5%;
+}
+
+@media (min-width: 1200px) {
+  .packages__old-price {
+    font-size: 28px;
+    line-height: 120%;
+  }
+}
+
+.packages__price {
+  color: #89d7d7;
+  margin-bottom: 20px;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 105.5%;
+}
+
+@media (min-width: 1200px) {
+  .packages__price {
+    font-size: 40px;
+    line-height: 120%;
+  }
+}
+
+.packages__features-list {
+  padding-left: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 130%;
+  list-style: disc;
+}
+
+@media (min-width: 1200px) {
+  .packages__features-list {
+    font-size: 16px;
+  }
+}
+
+.packages__features-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.packages__list-btn-wrap {
+  height: 60%;
+  flex-direction: column;
+  justify-content: space-between;
+  display: flex;
+}
+
+.packages__btn-wrap {
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+}
+
+.packages__buy-btn, .packages__more-btn {
+  cursor: pointer;
+  border: none;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+@media (min-width: 1200px) {
+  .packages__buy-btn, .packages__more-btn {
+    font-size: 16px;
+  }
+}
+
+.packages__buy-btn {
+  width: 155px;
+  height: 32px;
+  background-color: #89d7d7;
+  border: 1px solid #89d7d7;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  transition: all .25s cubic-bezier(.4, 0, .2, 1);
+}
+
+.packages__buy-btn:hover {
+  color: #89d7d7;
+  background-color: #0000;
+  border: 1px solid #89d7d7;
+}
+
+@media (min-width: 1200px) {
+  .packages__buy-btn {
+    width: 200px;
+    height: 41px;
+  }
+}
+
+.packages__more-btn {
+  color: #89d7d7;
+  width: fit-content;
+  background-color: #0000;
+  border-top: 2px solid #0000;
+  border-bottom: 2px solid #89d7d7;
+  padding-bottom: 3px;
+  transition: all .25s cubic-bezier(.4, 0, .2, 1);
+}
+
+.packages__more-btn:hover {
+  transform: scale(1.1);
+}
+
 .contact-form {
   width: 320px;
   height: 320px;

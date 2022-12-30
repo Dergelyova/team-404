@@ -1,0 +1,293 @@
+.team {
+  &__title {
+    font-style: italic;
+    font-weight: 900;
+    font-size: 19px;
+    line-height: 120%;
+    color: $accent-color;
+    margin-bottom: 15px;
+
+    @media (min-width: 760px) {
+      font-size: 40px;
+    }
+  }
+
+  &__tips {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 25px;
+    @media (min-width: 1100px) {
+      display: none;
+    }
+  }
+
+  &__tips-icon {
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+  }
+
+  &__tips-text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 130%;
+    color: $light-text-color;
+    width: 45%;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+
+    @media (min-width: 1200px) {
+      flex-wrap: nowrap;
+    }
+  }
+
+  &__item {
+    width: 320px;
+    height: 460px;
+    border-radius: 8px;
+    margin: 15px;
+
+    @media (min-width: 1200px) {
+      width: 367px;
+      height: 575px;
+    }
+  }
+
+  &__wrap {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+  }
+
+  &__front {
+    width: 100%;
+    height: 100%;
+    padding: 15px 28px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+
+  &__name {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 125%;
+    color: $accent-color;
+    @media (min-width: 1200px) {
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 140%;
+    }
+  }
+
+  &__position {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 140%;
+    color: $accent-color;
+
+    @media (min-width: 1200px) {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 130%;
+    }
+  }
+
+  //   BACK SIDE
+
+  &__back {
+    position: relative;
+    background: url('../images/triathlon/team/back-bg.png') center/cover
+      no-repeat;
+    padding: 15px;
+
+    &::after {
+      z-index: -1;
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: 8px;
+      padding: 2px;
+      background: linear-gradient(
+        #89d7d7,
+        rgba(137, 215, 215, 0.25),
+        rgba(137, 215, 215, 0.26),
+        #89d7d7
+      );
+      -webkit-mask: linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+    }
+
+    @media (min-width: 1200px) {
+      padding: 20px;
+    }
+  }
+
+  &__back-portrait-box {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__back-box-img {
+    width: 148px;
+    height: 148px;
+    border-radius: 11px;
+
+    @media (min-width: 1200px) {
+      width: 168px;
+      height: 168px;
+    }
+  }
+
+  &__back-box-list {
+    width: 40%;
+  }
+
+  &__back-box-item:not(:last-child) {
+    margin-bottom: 15px;
+    @media (min-width: 1200px) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__back-box-text {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 110%;
+    color: #c4c4c4;
+
+    @media (min-width: 1200px) {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 123%;
+    }
+  }
+
+  &__back-box-stats {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 140%;
+    color: $accent-color;
+
+    @media (min-width: 1200px) {
+      font-size: 24px;
+      line-height: 105%;
+    }
+  }
+
+  &__back-info-box {
+    margin-top: 17px;
+    color: $accent-color;
+  }
+
+  &__back-info-name {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 125%;
+    margin-bottom: 3px;
+
+    @media (min-width: 1200px) {
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 140%;
+    }
+  }
+
+  &__back-info-position {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 140%;
+    margin-bottom: 16px;
+
+    @media (min-width: 1200px) {
+      font-size: 24px;
+      line-height: 130%;
+    }
+  }
+
+  &__back-info-wrap {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @media (min-width: 1200px) {
+      height: 250px;
+    }
+  }
+
+  &__back-info-list {
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__back-info-item {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 130%;
+
+    @media (min-width: 1200px) {
+      font-size: 16px;
+    }
+  }
+
+  &__back-info-item:not(:last-child) {
+    margin-bottom: 15px;
+  }
+
+  &__back-info-icons {
+    display: flex;
+    @media (min-width: 1200px) {
+      width: 23px;
+      height: 23px;
+    }
+  }
+
+  &__back-info-link:not(:last-child) {
+    margin-right: 8px;
+  }
+}
+
+// * ANIMATION
+
+.flip-card {
+  background-color: transparent;
+
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}

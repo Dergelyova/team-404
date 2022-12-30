@@ -19,9 +19,11 @@
     text-transform: uppercase;
     color: $accent-color;
     margin-bottom: 20px;
+
     @media (min-width: 760px) {
       font-size: 40px;
       margin-bottom: 40px;
+      margin-left: 55px;
     }
   }
 
@@ -59,7 +61,16 @@
 
   &__item {
     position: relative;
-    border: 1px solid $accent-color;
+    // border: 1px solid $accent-color;
+    border-width: 1px;
+    border-style: solid;
+    border-image: linear-gradient(
+        #89d7d7,
+        rgba(137, 215, 215, 0.25),
+        rgba(137, 215, 215, 0.26),
+        #89d7d7
+      )
+      1;
     display: inline-block;
     width: 320px;
     height: 320px;

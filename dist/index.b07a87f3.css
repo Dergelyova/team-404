@@ -1275,7 +1275,9 @@ section {
   width: 320px;
   height: 320px;
   text-align: center;
-  border: 1px solid #89d7d7;
+  border-style: solid;
+  border-width: 1px;
+  border-image: linear-gradient(#89d7d7, #89d7d740, #89d7d742, #89d7d7) 1;
   display: inline-block;
   position: relative;
 }
@@ -2342,6 +2344,237 @@ section {
   display: block;
   position: absolute;
   left: -19px;
+}
+
+.team__title {
+  color: #89d7d7;
+  margin-bottom: 15px;
+  font-size: 19px;
+  font-style: italic;
+  font-weight: 900;
+  line-height: 120%;
+}
+
+@media (min-width: 760px) {
+  .team__title {
+    font-size: 40px;
+  }
+}
+
+.team__tips {
+  justify-content: end;
+  margin-bottom: 25px;
+  display: flex;
+}
+
+@media (min-width: 1200px) {
+  .team__tips {
+    display: none;
+  }
+}
+
+.team__tips-icon {
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
+}
+
+.team__tips-text {
+  color: #fff;
+  width: 45%;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 130%;
+}
+
+.team__list {
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  display: flex;
+}
+
+@media (min-width: 1200px) {
+  .team__list {
+    flex-wrap: nowrap;
+  }
+}
+
+.team__item {
+  width: 320px;
+  height: 460px;
+  border-radius: 8px;
+  margin: 15px;
+}
+
+@media (min-width: 1200px) {
+  .team__item {
+    width: 367px;
+    height: 575px;
+  }
+}
+
+.team__wrap {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.team__front {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  flex-direction: column;
+  justify-content: end;
+  padding: 15px 28px;
+  display: flex;
+}
+
+.team__name {
+  color: #89d7d7;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 125%;
+}
+
+@media (min-width: 1200px) {
+  .team__name {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 140%;
+  }
+}
+
+.team__position {
+  color: #89d7d7;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 140%;
+}
+
+@media (min-width: 1200px) {
+  .team__position {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 130%;
+  }
+}
+
+.team__back {
+  background: url("back-bg.137deb4b.png") center / cover no-repeat;
+  border-style: solid;
+  border-width: 1px;
+  border-image: linear-gradient(#89d7d7, #89d7d740, #89d7d742, #89d7d7) 1;
+  border-radius: 8px;
+  padding: 15px;
+}
+
+.team__back-portrait-box {
+  justify-content: space-between;
+  display: flex;
+}
+
+.team__back-box-img {
+  width: 148px;
+  height: 148px;
+  border-radius: 11px;
+}
+
+.team__back-box-list {
+  width: 40%;
+}
+
+.team__back-box-item {
+  margin-bottom: 15px;
+}
+
+.team__back-box-text {
+  color: #c4c4c4;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 110%;
+}
+
+.team__back-box-stats {
+  color: #89d7d7;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 140%;
+}
+
+.team__back-info-box {
+  color: #89d7d7;
+  margin-top: 17px;
+}
+
+.team__back-info-name {
+  margin-bottom: 3px;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 125%;
+}
+
+.team__back-info-position {
+  margin-bottom: 16px;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 140%;
+}
+
+.team__back-info-wrap {
+  height: 200px;
+  flex-direction: column;
+  justify-content: space-between;
+  display: flex;
+}
+
+.team__back-info-list {
+  height: 70%;
+  flex-direction: column;
+  justify-content: space-between;
+  display: flex;
+}
+
+.team__back-info-item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.team__back-info-icons {
+  display: flex;
+}
+
+.team__back-info-link:not(:last-child) {
+  margin-right: 8px;
+}
+
+.flip-card {
+  perspective: 1000px;
+  background-color: #0000;
+}
+
+.flip-card-inner {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform .6s;
+  position: relative;
+  box-shadow: 0 4px 8px #0003;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  position: absolute;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
 }
 
 .contact-form {

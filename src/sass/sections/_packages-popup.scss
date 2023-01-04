@@ -27,8 +27,8 @@
     position: absolute;
     top: 25px;
     left: 20px;
-    height: 25px;
-    @media (min-width: 760px) {
+    height: 20px;
+    @media (min-width: 1160px) {
       top: 25px;
       left: 36px;
       height: 44px;
@@ -229,8 +229,11 @@
   & .swiper {
     width: 300px;
     // height: 100%;
-    margin-top: 20px;
+    // margin-top: 20px;
     // overflow: visible !important;
+    @media (min-width: 760px) {
+      width: 400px;
+    }
     @media (min-width: 1160px) {
       display: none !important;
     }
@@ -243,26 +246,38 @@
 
   & .swiper-button-prev,
   & .swiper-rtl & .swiper-button-next {
-    //
     position: absolute !important;
-    top: -35 !important;
-    left: 40% !important;
-    width: 39px !important;
+    top: 43px !important;
+    left: 157px !important;
+    width: 19px !important;
     height: 30px !important;
-    color: white !important;
-    background: url('../images/triathlon/sucseed/arrow-left.png') center/contain
+    color: transparent !important;
+    background: url('../images/triathlon/packages/left.png') center/contain
       no-repeat;
+
+    @media (min-width: 760px) {
+      left: 200px !important;
+    }
+    @media (min-width: 1160px) {
+      display: none !important;
+    }
   }
 
   & .swiper-button-next {
     position: absolute !important;
 
-    top: -35 !important;
-    left: 55% !important;
-    width: 39px !important;
+    top: 43.5px !important;
+    left: 192px !important;
+    width: 19px !important;
     height: 30px !important;
-    color: white !important;
-    background: url('../images/triathlon/sucseed/arrow-right.png')
-      center/contain no-repeat;
+    color: transparent !important;
+    background: url('../images/triathlon/packages/right.png') center/contain
+      no-repeat;
+    @media (min-width: 760px) {
+      left: 230px !important;
+    }
+    @media (min-width: 1160px) {
+      display: none !important;
+    }
   }
 }

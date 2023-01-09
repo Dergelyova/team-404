@@ -2908,6 +2908,141 @@ section {
   transform: scale(1.1);
 }
 
+.support {
+  height: 100%;
+  background: linear-gradient(#020202bf, #020202bf), url("bg.fa1692e3.jpg") center / cover no-repeat;
+  overflow: hidden;
+}
+
+.support__container {
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+}
+
+.support__main-wrap {
+  flex-direction: column;
+  margin-bottom: 37px;
+  display: flex;
+}
+
+@media (min-width: 760px) {
+  .support__main-wrap {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .support__main-wrap {
+    align-items: flex-start;
+    margin-bottom: 60px;
+  }
+}
+
+.support__text-wrap {
+  margin-bottom: 31px;
+}
+
+.support__title {
+  color: #89d7d7;
+  text-transform: uppercase;
+  margin-bottom: 31px;
+  font-size: 19px;
+  font-style: italic;
+  font-weight: 900;
+  line-height: 120%;
+}
+
+@media (min-width: 760px) {
+  .support__title {
+    margin-bottom: 40px;
+    font-size: 40px;
+  }
+}
+
+.support__text {
+  margin-bottom: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 130%;
+}
+
+@media (min-width: 760px) {
+  .support__text {
+    width: 80%;
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .support__text {
+    width: 60%;
+  }
+}
+
+.support__img-box {
+  min-width: 320px;
+  height: 300px;
+  border-style: solid;
+  border-width: 1px;
+  border-image: linear-gradient(#89d7d7, #89d7d740, #89d7d742, #89d7d7) 1;
+}
+
+@media (min-width: 760px) {
+  .support__img-box {
+    min-width: 420px;
+    height: 500px;
+  }
+}
+
+@media (min-width: 760px) {
+  .support__img-box {
+    min-width: 460px;
+    height: 460px;
+  }
+}
+
+.support__btn-wrap {
+  margin: 0 auto;
+}
+
+.support__btn {
+  cursor: pointer;
+  color: #000;
+  text-align: center;
+  width: 155px;
+  height: 32px;
+  background-color: #89d7d7;
+  border: 1px solid #89d7d7;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  font-size: 12px;
+  font-weight: 700;
+  transition: all .25s cubic-bezier(.4, 0, .2, 1);
+}
+
+.support__btn:hover {
+  color: #89d7d7;
+  background-color: #0000;
+  border: 1px solid #89d7d7;
+}
+
+@media (min-width: 1200px) {
+  .support__btn {
+    width: 200px;
+    height: 41px;
+    font-size: 16px;
+  }
+}
+
+.support__links-wrap {
+  flex-direction: row;
+  justify-content: space-around;
+  display: flex;
+}
+
 .contact-form {
   width: 320px;
   height: 320px;
@@ -3017,6 +3152,93 @@ section {
     height: 41px;
     font-size: 12px;
     font-weight: 500;
+  }
+}
+
+.support-box {
+  width: 320px;
+  height: 100%;
+  color: #fff;
+  background: #000 padding-box padding-box;
+  border: 2px solid #0000;
+  border-radius: 13px;
+  padding: 30px 35px;
+  position: relative;
+}
+
+.support-box:after {
+  z-index: -1;
+  content: "";
+  -webkit-mask-composite: xor;
+  background: linear-gradient(#2b4aed, #ffe600);
+  border-radius: 8px;
+  padding: 2px;
+  position: absolute;
+  inset: 0;
+  -webkit-mask-image: linear-gradient(#fff 0 0), linear-gradient(#fff 0 0);
+  -webkit-mask-position: 0 0, 0 0;
+  -webkit-mask-size: auto, auto;
+  -webkit-mask-repeat: repeat, repeat;
+  -webkit-mask-clip: content-box, border-box;
+  -webkit-mask-origin: content-box, border-box;
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  -webkit-mask-source-type: auto, auto;
+  mask-mode: match-source, match-source;
+}
+
+@media (min-width: 1180px) {
+  .support-box {
+    width: fit-content;
+    height: 100%;
+    border-width: 3px;
+    border-radius: 23px;
+    padding: 35px 30px;
+  }
+
+  .support-box:after {
+    border-radius: 18px;
+    padding: 3px;
+  }
+}
+
+.support-modal__item {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.support-modal__title {
+  margin-bottom: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.support-modal__info {
+  color: #89d7d7;
+  word-break: break-word;
+  margin-bottom: 34px;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 140%;
+}
+
+.support-modal__subtext {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 180%;
+}
+
+.support-modal__copy-icon {
+  display: none;
+}
+
+@media (min-width: 1180px) {
+  .support-modal__copy-icon {
+    margin-left: 10px;
+    display: inline-block;
   }
 }
 

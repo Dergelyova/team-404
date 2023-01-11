@@ -1,0 +1,126 @@
+.support {
+  overflow: hidden;
+  height: 100%;
+  background: linear-gradient(rgba(2, 2, 2, 0.75), rgba(2, 2, 2, 0.75)),
+    url('../images/triathlon/support/bg.jpg') center/cover no-repeat;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__main-wrap {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 37px;
+
+    @media (min-width: 760px) {
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    @media (min-width: 1200px) {
+      align-items: flex-start;
+      margin-bottom: 60px;
+    }
+  }
+
+  &__text-wrap {
+    // width: 50%;
+    margin-bottom: 31px;
+  }
+
+  &__title {
+    font-style: italic;
+    font-weight: 900;
+    font-size: 19px;
+    line-height: 120%;
+    color: $accent-color;
+    text-transform: uppercase;
+    margin-bottom: 31px;
+
+    @media (min-width: 760px) {
+      font-size: 40px;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 130%;
+    margin-bottom: 20px;
+    @media (min-width: 760px) {
+      font-size: 16px;
+
+      width: 80%;
+    }
+    @media (min-width: 1200px) {
+      width: 60%;
+    }
+  }
+
+  &__img-box {
+    min-width: 320px;
+    height: 300px;
+    border-width: 1px;
+    border-style: solid;
+    border-image: linear-gradient(
+        #89d7d7,
+        rgba(137, 215, 215, 0.25),
+        rgba(137, 215, 215, 0.26),
+        #89d7d7
+      )
+      1;
+    @media (min-width: 760px) {
+      min-width: 420px;
+      height: 500px;
+    }
+    @media (min-width: 760px) {
+      min-width: 460px;
+      height: 460px;
+    }
+  }
+
+  &__btn-wrap {
+    margin: 0 auto;
+  }
+
+  &__btn {
+    font-weight: 700;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+    background-color: $accent-color;
+    color: $dark-text-color;
+    text-align: center;
+
+    width: 155px;
+    height: 32px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    border: 1px solid $accent-color;
+
+    transition: $transition;
+    transition-timing-function: $cubic-bezier;
+    &:hover {
+      background-color: transparent;
+      color: $accent-color;
+      border: 1px solid $accent-color;
+    }
+
+    @media (min-width: 1200px) {
+      font-size: 16px;
+      width: 200px;
+      height: 41px;
+    }
+  }
+
+  &__links-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
